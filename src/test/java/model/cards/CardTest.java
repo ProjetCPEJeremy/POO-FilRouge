@@ -78,7 +78,7 @@ public class CardTest {
             Card card = cardSamples.get(i);
 
             // method being tested
-            card.reveale();
+            card.reveal();
 
             String expectedRevealedValue = cardSamplesValues.get(i);
             String revealedResult = card.toString();
@@ -95,7 +95,7 @@ public class CardTest {
                 revealedResult);
             assertTrue( 
                 "Revealed cards' isRevealed() should return true", 
-                card.isRevealed() == true 
+                card.isRevealed() == true
             );
             
             // testing a 2nd method in same test suite
@@ -109,7 +109,7 @@ public class CardTest {
             );
             assertTrue( 
                 "Hidden cards' isRevealed() should return false", 
-                card.isRevealed() == true 
+                card.isRevealed() == false
             );
         }
     }
